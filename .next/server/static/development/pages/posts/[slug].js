@@ -1,7 +1,7 @@
 module.exports =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
-/******/ 	var installedModules = require('../../../ssr-module-cache.js');
+/******/ 	var installedModules = require('../../../../ssr-module-cache.js');
 /******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -438,220 +438,50 @@ function Footer() {
 
 /***/ }),
 
-/***/ "./components/hero-post.js":
-/*!*********************************!*\
-  !*** ./components/hero-post.js ***!
-  \*********************************/
+/***/ "./components/header.js":
+/*!******************************!*\
+  !*** ./components/header.js ***!
+  \******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return HeroPost; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Header; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var prismic_reactjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prismic-reactjs */ "prismic-reactjs");
-/* harmony import */ var prismic_reactjs__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prismic_reactjs__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_avatar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/avatar */ "./components/avatar.js");
-/* harmony import */ var _components_date__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/date */ "./components/date.js");
-/* harmony import */ var _components_cover_image__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/cover-image */ "./components/cover-image.js");
-var _jsxFileName = "C:\\Users\\lucyv\\Desktop\\fleabag.world\\fleabag-world\\components\\hero-post.js";
+var _jsxFileName = "C:\\Users\\lucyv\\Desktop\\fleabag.world\\fleabag-world\\components\\header.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-
-
-
-
-function HeroPost({
-  title,
-  coverImage,
-  date,
-  excerpt,
-  author,
-  slug
-}) {
-  return __jsx("section", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 5
-    }
-  }, __jsx("div", {
-    className: "mb-8 md:mb-16",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17,
-      columnNumber: 7
-    }
-  }, __jsx(_components_cover_image__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    title: prismic_reactjs__WEBPACK_IMPORTED_MODULE_2__["RichText"].asText(title),
-    slug: slug,
-    url: coverImage.url,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 9
-    }
-  })), __jsx("div", {
-    className: "md:grid md:grid-cols-2 md:col-gap-16 lg:col-gap-8 mb-20 md:mb-28",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24,
-      columnNumber: 7
-    }
-  }, __jsx("div", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25,
-      columnNumber: 9
-    }
-  }, __jsx("h3", {
-    className: "mb-4 text-4xl lg:text-6xl leading-tight",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26,
-      columnNumber: 11
-    }
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    as: `/posts/${slug}`,
-    href: "/posts/[slug]",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27,
-      columnNumber: 13
-    }
-  }, __jsx("a", {
-    className: "hover:underline",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28,
-      columnNumber: 15
-    }
-  }, __jsx(prismic_reactjs__WEBPACK_IMPORTED_MODULE_2__["RichText"], {
-    render: title,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29,
-      columnNumber: 17
-    }
-  })))), __jsx("div", {
-    className: "mb-4 md:mb-0 text-lg",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33,
-      columnNumber: 11
-    }
-  }, __jsx(_components_date__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    dateString: date,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34,
-      columnNumber: 13
-    }
-  }))), __jsx("div", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37,
-      columnNumber: 9
-    }
-  }, __jsx("p", {
-    className: "text-lg leading-relaxed mb-4",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38,
-      columnNumber: 11
-    }
-  }, excerpt), author && __jsx(_components_avatar__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    name: author.name,
-    picture: author.picture,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39,
-      columnNumber: 22
-    }
-  }))));
-}
-
-/***/ }),
-
-/***/ "./components/intro.js":
-/*!*****************************!*\
-  !*** ./components/intro.js ***!
-  \*****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Intro; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _lib_constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../lib/constants */ "./lib/constants.js");
-var _jsxFileName = "C:\\Users\\lucyv\\Desktop\\fleabag.world\\fleabag-world\\components\\intro.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-function Intro() {
-  return __jsx("section", {
-    className: "flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12",
+function Header() {
+  return __jsx("h2", {
+    className: "text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mb-20 mt-8",
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5,
       columnNumber: 5
     }
-  }, __jsx("h1", {
-    className: "text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8",
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/",
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6,
       columnNumber: 7
     }
-  }, "Blog."), __jsx("h4", {
-    className: "text-center md:text-left text-lg mt-5 md:pl-8",
+  }, __jsx("a", {
+    className: "hover:underline",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
-      columnNumber: 7
-    }
-  }, "A statically generated blog example using", ' ', __jsx("a", {
-    href: "https://nextjs.org/",
-    className: "underline hover:text-success duration-200 transition-colors",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 7,
       columnNumber: 9
     }
-  }, "Next.js"), ' ', "and", ' ', __jsx("a", {
-    href: _lib_constants__WEBPACK_IMPORTED_MODULE_1__["CMS_URL"],
-    className: "underline hover:text-success duration-200 transition-colors",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 9
-    }
-  }, _lib_constants__WEBPACK_IMPORTED_MODULE_1__["CMS_NAME"]), "."));
+  }, "Blog")), ".");
 }
 
 /***/ }),
@@ -720,6 +550,20 @@ function Layout({
     }
   }));
 }
+
+/***/ }),
+
+/***/ "./components/markdown-styles.module.css":
+/*!***********************************************!*\
+  !*** ./components/markdown-styles.module.css ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"markdown": "markdown-styles_markdown__1x9gM"
+};
 
 /***/ }),
 
@@ -935,6 +779,178 @@ function MoreStories({
 
 /***/ }),
 
+/***/ "./components/post-body.js":
+/*!*********************************!*\
+  !*** ./components/post-body.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return PostBody; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _markdown_styles_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./markdown-styles.module.css */ "./components/markdown-styles.module.css");
+/* harmony import */ var _markdown_styles_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_markdown_styles_module_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var prismic_reactjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prismic-reactjs */ "prismic-reactjs");
+/* harmony import */ var prismic_reactjs__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prismic_reactjs__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "C:\\Users\\lucyv\\Desktop\\fleabag.world\\fleabag-world\\components\\post-body.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+function PostBody({
+  content
+}) {
+  return __jsx("div", {
+    className: "max-w-2xl mx-auto",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6,
+      columnNumber: 5
+    }
+  }, __jsx("div", {
+    className: _markdown_styles_module_css__WEBPACK_IMPORTED_MODULE_1___default.a['markdown'],
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7,
+      columnNumber: 7
+    }
+  }, __jsx(prismic_reactjs__WEBPACK_IMPORTED_MODULE_2__["RichText"], {
+    render: content,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 9
+    }
+  })));
+}
+
+/***/ }),
+
+/***/ "./components/post-header.js":
+/*!***********************************!*\
+  !*** ./components/post-header.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return PostHeader; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prismic_reactjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prismic-reactjs */ "prismic-reactjs");
+/* harmony import */ var prismic_reactjs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prismic_reactjs__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_avatar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/avatar */ "./components/avatar.js");
+/* harmony import */ var _components_date__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/date */ "./components/date.js");
+/* harmony import */ var _components_cover_image__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/cover-image */ "./components/cover-image.js");
+/* harmony import */ var _components_post_title__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/post-title */ "./components/post-title.js");
+var _jsxFileName = "C:\\Users\\lucyv\\Desktop\\fleabag.world\\fleabag-world\\components\\post-header.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+function PostHeader({
+  title,
+  coverImage,
+  date,
+  author
+}) {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_post_title__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 7
+    }
+  }, title[0].text), __jsx("div", {
+    className: "hidden md:block md:mb-12",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 7
+    }
+  }, author && __jsx(_components_avatar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    name: author.name,
+    picture: author.picture,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 20
+    }
+  })), __jsx("div", {
+    className: "mb-8 md:mb-16 -mx-5 sm:mx-0",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 7
+    }
+  }, __jsx(_components_cover_image__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    title: prismic_reactjs__WEBPACK_IMPORTED_MODULE_1__["RichText"].asText(title),
+    url: coverImage.url,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 9
+    }
+  })), __jsx("div", {
+    className: "max-w-2xl mx-auto",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 7
+    }
+  }, __jsx("div", {
+    className: "block md:hidden mb-6",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 9
+    }
+  }, author && __jsx(_components_avatar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    name: author.name,
+    picture: author.picture,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 22
+    }
+  })), __jsx("div", {
+    className: "mb-6 text-lg",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 9
+    }
+  }, __jsx(_components_date__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    dateString: date,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 11
+    }
+  }))));
+}
+
+/***/ }),
+
 /***/ "./components/post-preview.js":
 /*!************************************!*\
   !*** ./components/post-preview.js ***!
@@ -1062,6 +1078,66 @@ function PostPreview({
       columnNumber: 7
     }
   }));
+}
+
+/***/ }),
+
+/***/ "./components/post-title.js":
+/*!**********************************!*\
+  !*** ./components/post-title.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return PostTitle; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\Users\\lucyv\\Desktop\\fleabag.world\\fleabag-world\\components\\post-title.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+function PostTitle({
+  children
+}) {
+  return __jsx("h1", {
+    className: "text-6xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-tight md:leading-none mb-12 text-center md:text-left",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 3,
+      columnNumber: 5
+    }
+  }, children);
+}
+
+/***/ }),
+
+/***/ "./components/section-separator.js":
+/*!*****************************************!*\
+  !*** ./components/section-separator.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return SectionSeparator; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\Users\\lucyv\\Desktop\\fleabag.world\\fleabag-world\\components\\section-separator.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+function SectionSeparator() {
+  return __jsx("hr", {
+    className: "border-accent-2 mt-28 mb-24",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 2,
+      columnNumber: 10
+    }
+  });
 }
 
 /***/ }),
@@ -1895,6 +1971,278 @@ function withRouter(ComposedComponent) {
 
   return WithRouterWrapper;
 }
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/amp-context.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/amp-context.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+  result["default"] = mod;
+  return result;
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const React = __importStar(__webpack_require__(/*! react */ "react"));
+
+exports.AmpStateContext = React.createContext({});
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/amp.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/amp.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const react_1 = __importDefault(__webpack_require__(/*! react */ "react"));
+
+const amp_context_1 = __webpack_require__(/*! ./amp-context */ "./node_modules/next/dist/next-server/lib/amp-context.js");
+
+function isInAmpMode({
+  ampFirst = false,
+  hybrid = false,
+  hasQuery = false
+} = {}) {
+  return ampFirst || hybrid && hasQuery;
+}
+
+exports.isInAmpMode = isInAmpMode;
+
+function useAmp() {
+  // Don't assign the context value to a variable to save bytes
+  return isInAmpMode(react_1.default.useContext(amp_context_1.AmpStateContext));
+}
+
+exports.useAmp = useAmp;
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/head-manager-context.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/head-manager-context.js ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+  result["default"] = mod;
+  return result;
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const React = __importStar(__webpack_require__(/*! react */ "react"));
+
+exports.HeadManagerContext = React.createContext(null);
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/head.js":
+/*!********************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/head.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const react_1 = __importDefault(__webpack_require__(/*! react */ "react"));
+
+const side_effect_1 = __importDefault(__webpack_require__(/*! ./side-effect */ "./node_modules/next/dist/next-server/lib/side-effect.js"));
+
+const amp_context_1 = __webpack_require__(/*! ./amp-context */ "./node_modules/next/dist/next-server/lib/amp-context.js");
+
+const head_manager_context_1 = __webpack_require__(/*! ./head-manager-context */ "./node_modules/next/dist/next-server/lib/head-manager-context.js");
+
+const amp_1 = __webpack_require__(/*! ./amp */ "./node_modules/next/dist/next-server/lib/amp.js");
+
+function defaultHead(inAmpMode = false) {
+  const head = [react_1.default.createElement("meta", {
+    charSet: "utf-8"
+  })];
+
+  if (!inAmpMode) {
+    head.push(react_1.default.createElement("meta", {
+      name: "viewport",
+      content: "width=device-width"
+    }));
+  }
+
+  return head;
+}
+
+exports.defaultHead = defaultHead;
+
+function onlyReactElement(list, child) {
+  // React children can be "string" or "number" in this case we ignore them for backwards compat
+  if (typeof child === 'string' || typeof child === 'number') {
+    return list;
+  } // Adds support for React.Fragment
+
+
+  if (child.type === react_1.default.Fragment) {
+    return list.concat(react_1.default.Children.toArray(child.props.children).reduce((fragmentList, fragmentChild) => {
+      if (typeof fragmentChild === 'string' || typeof fragmentChild === 'number') {
+        return fragmentList;
+      }
+
+      return fragmentList.concat(fragmentChild);
+    }, []));
+  }
+
+  return list.concat(child);
+}
+
+const METATYPES = ['name', 'httpEquiv', 'charSet', 'itemProp'];
+/*
+ returns a function for filtering head child elements
+ which shouldn't be duplicated, like <title/>
+ Also adds support for deduplicated `key` properties
+*/
+
+function unique() {
+  const keys = new Set();
+  const tags = new Set();
+  const metaTypes = new Set();
+  const metaCategories = {};
+  return h => {
+    let unique = true;
+
+    if (h.key && typeof h.key !== 'number' && h.key.indexOf('$') > 0) {
+      const key = h.key.slice(h.key.indexOf('$') + 1);
+
+      if (keys.has(key)) {
+        unique = false;
+      } else {
+        keys.add(key);
+      }
+    } // eslint-disable-next-line default-case
+
+
+    switch (h.type) {
+      case 'title':
+      case 'base':
+        if (tags.has(h.type)) {
+          unique = false;
+        } else {
+          tags.add(h.type);
+        }
+
+        break;
+
+      case 'meta':
+        for (let i = 0, len = METATYPES.length; i < len; i++) {
+          const metatype = METATYPES[i];
+          if (!h.props.hasOwnProperty(metatype)) continue;
+
+          if (metatype === 'charSet') {
+            if (metaTypes.has(metatype)) {
+              unique = false;
+            } else {
+              metaTypes.add(metatype);
+            }
+          } else {
+            const category = h.props[metatype];
+            const categories = metaCategories[metatype] || new Set();
+
+            if (categories.has(category)) {
+              unique = false;
+            } else {
+              categories.add(category);
+              metaCategories[metatype] = categories;
+            }
+          }
+        }
+
+        break;
+    }
+
+    return unique;
+  };
+}
+/**
+ *
+ * @param headElement List of multiple <Head> instances
+ */
+
+
+function reduceComponents(headElements, props) {
+  return headElements.reduce((list, headElement) => {
+    const headElementChildren = react_1.default.Children.toArray(headElement.props.children);
+    return list.concat(headElementChildren);
+  }, []).reduce(onlyReactElement, []).reverse().concat(defaultHead(props.inAmpMode)).filter(unique()).reverse().map((c, i) => {
+    const key = c.key || i;
+    return react_1.default.cloneElement(c, {
+      key
+    });
+  });
+}
+
+const Effect = side_effect_1.default();
+/**
+ * This component injects elements to `<head>` of your page.
+ * To avoid duplicated `tags` in `<head>` you can use the `key` property, which will make sure every tag is only rendered once.
+ */
+
+function Head({
+  children
+}) {
+  return react_1.default.createElement(amp_context_1.AmpStateContext.Consumer, null, ampState => react_1.default.createElement(head_manager_context_1.HeadManagerContext.Consumer, null, updateHead => react_1.default.createElement(Effect, {
+    reduceComponentsToState: reduceComponents,
+    handleStateChange: updateHead,
+    inAmpMode: amp_1.isInAmpMode(ampState)
+  }, children)));
+}
+
+Head.rewind = Effect.rewind;
+exports.default = Head;
 
 /***/ }),
 
@@ -2789,6 +3137,77 @@ exports.getRouteRegex = getRouteRegex;
 
 /***/ }),
 
+/***/ "./node_modules/next/dist/next-server/lib/side-effect.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/side-effect.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const react_1 = __webpack_require__(/*! react */ "react");
+
+const isServer = true;
+
+exports.default = () => {
+  const mountedInstances = new Set();
+  let state;
+
+  function emitChange(component) {
+    state = component.props.reduceComponentsToState([...mountedInstances], component.props);
+
+    if (component.props.handleStateChange) {
+      component.props.handleStateChange(state);
+    }
+  }
+
+  return class extends react_1.Component {
+    // Used when server rendering
+    static rewind() {
+      const recordedState = state;
+      state = undefined;
+      mountedInstances.clear();
+      return recordedState;
+    }
+
+    constructor(props) {
+      super(props);
+
+      if (isServer) {
+        mountedInstances.add(this);
+        emitChange(this);
+      }
+    }
+
+    componentDidMount() {
+      mountedInstances.add(this);
+      emitChange(this);
+    }
+
+    componentDidUpdate() {
+      emitChange(this);
+    }
+
+    componentWillUnmount() {
+      mountedInstances.delete(this);
+      emitChange(this);
+    }
+
+    render() {
+      return null;
+    }
+
+  };
+};
+
+/***/ }),
+
 /***/ "./node_modules/next/dist/next-server/lib/utils.js":
 /*!*********************************************************!*\
   !*** ./node_modules/next/dist/next-server/lib/utils.js ***!
@@ -2924,6 +3343,123 @@ exports.ST = exports.SP && typeof performance.mark === 'function' && typeof perf
 
 /***/ }),
 
+/***/ "./node_modules/next/dist/pages/_error.js":
+/*!************************************************!*\
+  !*** ./node_modules/next/dist/pages/_error.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+exports.__esModule = true;
+exports.default = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+
+var _head = _interopRequireDefault(__webpack_require__(/*! ../next-server/lib/head */ "./node_modules/next/dist/next-server/lib/head.js"));
+
+var statusCodes = {
+  400: 'Bad Request',
+  404: 'This page could not be found',
+  405: 'Method Not Allowed',
+  500: 'Internal Server Error'
+};
+/**
+* `Error` component used for handling errors.
+*/
+
+class Error extends _react.default.Component {
+  static getInitialProps(_ref) {
+    var {
+      res,
+      err
+    } = _ref;
+    var statusCode = res && res.statusCode ? res.statusCode : err ? err.statusCode : 404;
+    return {
+      statusCode
+    };
+  }
+
+  render() {
+    var {
+      statusCode
+    } = this.props;
+    var title = this.props.title || statusCodes[statusCode] || 'An unexpected error has occurred';
+    return _react.default.createElement("div", {
+      style: styles.error
+    }, _react.default.createElement(_head.default, null, _react.default.createElement("title", null, statusCode, ": ", title)), _react.default.createElement("div", null, _react.default.createElement("style", {
+      dangerouslySetInnerHTML: {
+        __html: 'body { margin: 0 }'
+      }
+    }), statusCode ? _react.default.createElement("h1", {
+      style: styles.h1
+    }, statusCode) : null, _react.default.createElement("div", {
+      style: styles.desc
+    }, _react.default.createElement("h2", {
+      style: styles.h2
+    }, title, "."))));
+  }
+
+}
+
+exports.default = Error;
+Error.displayName = 'ErrorPage';
+var styles = {
+  error: {
+    color: '#000',
+    background: '#fff',
+    fontFamily: '-apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Fira Sans", Avenir, "Helvetica Neue", "Lucida Grande", sans-serif',
+    height: '100vh',
+    textAlign: 'center',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  desc: {
+    display: 'inline-block',
+    textAlign: 'left',
+    lineHeight: '49px',
+    height: '49px',
+    verticalAlign: 'middle'
+  },
+  h1: {
+    display: 'inline-block',
+    borderRight: '1px solid rgba(0, 0, 0,.3)',
+    margin: 0,
+    marginRight: '20px',
+    padding: '10px 23px 10px 0',
+    fontSize: '24px',
+    fontWeight: 500,
+    verticalAlign: 'top'
+  },
+  h2: {
+    fontSize: '14px',
+    fontWeight: 'normal',
+    lineHeight: 'inherit',
+    margin: 0,
+    padding: 0
+  }
+};
+
+/***/ }),
+
+/***/ "./node_modules/next/error.js":
+/*!************************************!*\
+  !*** ./node_modules/next/error.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! ./dist/pages/_error */ "./node_modules/next/dist/pages/_error.js")
+
+
+/***/ }),
+
 /***/ "./node_modules/next/link.js":
 /*!***********************************!*\
   !*** ./node_modules/next/link.js ***!
@@ -2936,29 +3472,37 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
-/*! exports provided: default, getStaticProps */
+/***/ "./pages/posts/[slug].js":
+/*!*******************************!*\
+  !*** ./pages/posts/[slug].js ***!
+  \*******************************/
+/*! exports provided: default, getStaticProps, getStaticPaths */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Index; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Post; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return getStaticProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticPaths", function() { return getStaticPaths; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/container */ "./components/container.js");
-/* harmony import */ var _components_more_stories__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/more-stories */ "./components/more-stories.js");
-/* harmony import */ var _components_hero_post__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/hero-post */ "./components/hero-post.js");
-/* harmony import */ var _components_intro__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/intro */ "./components/intro.js");
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
-/* harmony import */ var _lib_api__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../lib/api */ "./lib/api.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/head */ "next/head");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _lib_constants__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../lib/constants */ "./lib/constants.js");
-var _jsxFileName = "C:\\Users\\lucyv\\Desktop\\fleabag.world\\fleabag-world\\pages\\index.js";
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var next_error__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/error */ "./node_modules/next/error.js");
+/* harmony import */ var next_error__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_error__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_container__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/container */ "./components/container.js");
+/* harmony import */ var _components_post_body__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/post-body */ "./components/post-body.js");
+/* harmony import */ var _components_more_stories__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/more-stories */ "./components/more-stories.js");
+/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/header */ "./components/header.js");
+/* harmony import */ var _components_post_header__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/post-header */ "./components/post-header.js");
+/* harmony import */ var _components_section_separator__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/section-separator */ "./components/section-separator.js");
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../components/layout */ "./components/layout.js");
+/* harmony import */ var _lib_api__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../lib/api */ "./lib/api.js");
+/* harmony import */ var _components_post_title__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../components/post-title */ "./components/post-title.js");
+/* harmony import */ var _lib_constants__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../lib/constants */ "./lib/constants.js");
+var _jsxFileName = "C:\\Users\\lucyv\\Desktop\\fleabag.world\\fleabag-world\\pages\\posts\\[slug].js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -2969,94 +3513,161 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-function Index({
-  preview,
-  allPosts
+
+
+
+
+
+function Post({
+  post,
+  morePosts,
+  preview
 }) {
-  const heroPost = allPosts[0].node;
-  const morePosts = allPosts.slice(1);
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  var _post$_meta;
+
+  const router = Object(next_router__WEBPACK_IMPORTED_MODULE_1__["useRouter"])();
+
+  if (!router.isFallback && !(post === null || post === void 0 ? void 0 : (_post$_meta = post._meta) === null || _post$_meta === void 0 ? void 0 : _post$_meta.uid)) {
+    return __jsx(next_error__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      statusCode: 404,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18,
+        columnNumber: 12
+      }
+    });
+  }
+
+  return __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_10__["default"], {
     preview: preview,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 7
+      lineNumber: 22,
+      columnNumber: 5
     }
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_7___default.a, {
+  }, __jsx(_components_container__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 23,
+      columnNumber: 7
+    }
+  }, __jsx(_components_header__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
       columnNumber: 9
+    }
+  }), router.isFallback ? __jsx(_components_post_title__WEBPACK_IMPORTED_MODULE_12__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 11
+    }
+  }, "Loading\u2026") : __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("article", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29,
+      columnNumber: 13
+    }
+  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 15
     }
   }, __jsx("title", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
-      columnNumber: 11
+      lineNumber: 31,
+      columnNumber: 17
     }
-  }, "Next.js Blog Example with ", _lib_constants__WEBPACK_IMPORTED_MODULE_8__["CMS_NAME"])), __jsx(_components_container__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, post.title[0].text, " | Next.js Blog Example with ", _lib_constants__WEBPACK_IMPORTED_MODULE_13__["CMS_NAME"]), __jsx("meta", {
+    property: "og:image",
+    content: post.coverimage.url,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
-      columnNumber: 9
+      lineNumber: 34,
+      columnNumber: 17
     }
-  }, __jsx(_components_intro__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  })), __jsx(_components_post_header__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    title: post.title,
+    coverImage: post.coverimage,
+    date: post.date,
+    author: post.author,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 11
+      lineNumber: 36,
+      columnNumber: 15
     }
-  }), heroPost && __jsx(_components_hero_post__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    title: heroPost.title,
-    coverImage: heroPost.coverimage,
-    date: heroPost.date,
-    author: heroPost.author,
-    slug: heroPost._meta.uid,
-    excerpt: heroPost.excerpt,
+  }), __jsx(_components_post_body__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    content: post.content,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 42,
+      columnNumber: 15
+    }
+  })), __jsx(_components_section_separator__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44,
       columnNumber: 13
     }
-  }), morePosts.length > 0 && __jsx(_components_more_stories__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }), morePosts && morePosts.length > 0 && __jsx(_components_more_stories__WEBPACK_IMPORTED_MODULE_6__["default"], {
     posts: morePosts,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
-      columnNumber: 36
+      lineNumber: 46,
+      columnNumber: 15
     }
   }))));
 }
 async function getStaticProps({
+  params,
   preview,
   previewData
 }) {
-  const allPosts = await Object(_lib_api__WEBPACK_IMPORTED_MODULE_6__["getAllPostsForHome"])(previewData);
+  const data = await Object(_lib_api__WEBPACK_IMPORTED_MODULE_11__["getPostAndMorePosts"])(params.slug, previewData);
   return {
     props: {
       preview,
-      allPosts
+      post: data === null || data === void 0 ? void 0 : data.post,
+      morePosts: data === null || data === void 0 ? void 0 : data.morePosts
     }
+  };
+}
+async function getStaticPaths() {
+  const allPosts = await Object(_lib_api__WEBPACK_IMPORTED_MODULE_11__["getAllPostsWithSlug"])();
+  return {
+    paths: (allPosts === null || allPosts === void 0 ? void 0 : allPosts.map(({
+      node
+    }) => `/posts/${node._meta.uid}`)) || [],
+    fallback: true
   };
 }
 
 /***/ }),
 
-/***/ 4:
-/*!******************************!*\
-  !*** multi ./pages/index.js ***!
-  \******************************/
+/***/ 5:
+/*!*************************************!*\
+  !*** multi ./pages/posts/[slug].js ***!
+  \*************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\lucyv\Desktop\fleabag.world\fleabag-world\pages\index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! C:\Users\lucyv\Desktop\fleabag.world\fleabag-world\pages\posts\[slug].js */"./pages/posts/[slug].js");
 
 
 /***/ }),
@@ -3102,6 +3713,17 @@ module.exports = require("isomorphic-unfetch");
 /***/ (function(module, exports) {
 
 module.exports = require("next/head");
+
+/***/ }),
+
+/***/ "next/router":
+/*!******************************!*\
+  !*** external "next/router" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/router");
 
 /***/ }),
 
@@ -3183,4 +3805,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=[slug].js.map
